@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡牌對戰遊戲</title>
+    <!-- Animate.css for card animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="stats opponent-stats">
+            <div class="health">生命值: <span id="opponent-health">30</span></div>
+        </div>
+
+        <div class="opponent-hand">
+            <!-- 對手的手牌區域 -->
+        </div>
+        
+        <div class="battlefield">
+            <div class="battle-log">
+                <h3>戰鬥紀錄</h3>
+                <div id="battle-log-content"></div>
+            </div>
+            <div class="opponent-field">
+                <!-- 對手的場地 -->
+            </div>
+            <div class="player-field">
+                <!-- 玩家的場地 -->
+            </div>
+        </div>
+
+        <div class="player-hand">
+            <!-- 玩家的手牌區域 -->
+        </div>
+
+        <div class="stats player-stats">
+            <div class="health">生命值: <span id="player-health">30</span></div>
+            <div class="mana">魔力值: <span id="current-mana">1</span>/<span id="max-mana">1</span></div>
+        </div>
+
+        <div class="game-controls">
+            <button id="draw-card">抽牌</button>
+            <button id="end-turn">結束回合</button>
+        </div>
+    </div>
+
+    <!-- SweetAlert2 for nice popups -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
